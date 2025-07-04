@@ -63,6 +63,16 @@ And the output would be something like (note it's not deterministic, and sometim
 Answer: (5 * (10 - 4)) - 6 = 24
 ```
 
+## Command Line Interface
+After installing the package you can also run tasks directly from the command line:
+
+```bash
+tot --task game24 --method_generate propose --method_evaluate value \
+    --task_start_index 0 --task_end_index 1
+```
+
+The CLI exposes the same arguments as `run.py`.
+
 ## Paper Experiments
 
 Run experiments via ``sh scripts/{game24, text, crosswords}/{standard_sampling, cot_sampling, bfs}.sh``, except in crosswords we use a DFS algorithm for ToT, which can be run via ``scripts/crosswords/search_crosswords-dfs.ipynb``.

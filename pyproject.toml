@@ -31,5 +31,8 @@ dependencies = {file = ["requirements.txt"]}
 [tool.setuptools.packages.find]
 where = ["src"]  # list of folders that contain the packages (["."] by default)
 
+[project.scripts]
+tot = "tot.cli:main"
+
 [project.urls]
 Homepage = "https://github.com/princeton-nlp/tree-of-thought-llm"
